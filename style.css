@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+.mainPage {
+  width: 100%;
+  background-image: radial-gradient(#ffffffad, #ffffff34), url(./picture/img2.jpg);
+  background-size: 100% 100%;
+}
+
+.mainPage .header {
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff69;
+  font-size: 23px;
+  color: rgb(120, 73, 2);
+  border-radius: 0 0 50px 50px;
+  -webkit-border-radius: 0 0 50px 50px;
+  -moz-border-radius: 0 0 50px 50px;
+  -ms-border-radius: 0 0 50px 50px;
+  -o-border-radius: 0 0 50px 50px;
+  font-family: "Gulzar", serif;
+}
+
+.mainPage .header .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20PX;
+  margin-top: -52px;
+}
+
+.mainPage .header h1 {
+    text-shadow: 4px 4px 4px #fff;
+}
+
+.mainPage .footer {
+  background-color: #ffffff69;
+  padding: 5px 10px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 50px 50px 0 0;
+  -webkit-border-radius: 50px 50px 0 0;
+  -moz-border-radius: 50px 50px 0 0;
+  -ms-border-radius: 50px 50px 0 0;
+  -o-border-radius: 50px 50px 0 0;
+  font-family: "Gulzar", serif;
+  margin-top: -9vh;
+}
+
+.mainPage .footer h3 a {
+  color: rgb(120, 73, 2);
+  font-size: 25px;
+  margin: 0 20px;
+  text-shadow: 4px 4px 4px #ffffff;
+}
+
+.mainPage .content {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.mainPage .content .top {
+  display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: -48px;
+    gap: 50px;
+}
+
+.mainPage .content .top span {
+  font-size: 25px;
+  font-family: "Tajawal", sans-serif;
+}
+
+.mainPage .content .moaqit {
+    width: 100%;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    direction: rtl;
+    gap: 20px;
+}
+
+.mainPage .content .moaqit div {
+    /* width: calc(90%/6); */
+    padding: 10px;
+    background-color: #ffffff69;
+    border-radius: 40px 40px 0 0;
+    -webkit-border-radius: 40px 40px 0 0;
+    -moz-border-radius: 40px 40px 0 0;
+    -ms-border-radius: 40px 40px 0 0;
+    -o-border-radius: 40px 40px 0 0;
+    text-align: center;
+    box-shadow: 2px 2px 6px #eee;
+    border: 6px solid rgba(120, 73, 2, 0.386);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.mainPage .content .moaqit div:hover {
+  background-color: rgba(120, 73, 2, 0.386);
+  color: #fff;
+}
+
+.mainPage .content .moaqit div:hover p {
+  color: #fff;
+}
+
+.mainPage .content .moaqit div h2 {
+    font-family: "Tajawal", sans-serif;
+}
+
+.mainPage .content .cities .city h2 {
+  font-size: 100px;
+  font-family: "Gulzar", serif;
+  color: rgb(120, 73, 2);
+  margin-bottom: -9vh;
+  text-decoration: underline;
+  margin-left: 50px;
+}
+
+.mainPage .content .cities {
+  direction: rtl;
+  padding-right: 100px;
+}
+
+.mainPage .content .cities .select select {
+  background-color: transparent;
+  width: 200px;
+  padding: 1px 15px;
+  font-size: 24px;
+  color: rgb(120, 73, 2);
+  border: 2px solid rgb(120, 73, 2);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.mainPage .content .moaqit p {
+  font-size: 55px;
+  font-family: "Gulzar", serif;
+  color: rgb(120, 73, 2);
+  font-weight: bold;
+  margin-bottom: -40px;
+}
+
+@media (max-width : 1200px) {
+  .mainPage .content .moaqit {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width : 1000px) {
+  .mainPage .content .top span {
+    font-size: 20px;
+  }
+
+  .mainPage .content .top .cities .city h2 {
+    font-size: 85px;
+  }
+}
+
+@media (max-width : 600px) {
+  .mainPage {
+    background-size: contain;
+  }
+  
+  .mainPage .content .top {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 0;
+  }
+
+  .mainPage .content .top .cities {
+    margin: -40px 0 20px 100px;
+  }
+
+  .mainPage .content .moaqit {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width : 400px) {
+  .mainPage .content .moaqit {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
